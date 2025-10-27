@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio — Fadhlan</title>
+  <style>
+    :root{--accent:#2563eb;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,#071025 0%, #07152a 100%); color:#eef2f7; line-height:1.5}
+    .container{max-width:1000px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:0.95rem}
+    nav a:hover{color:#fff}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px;align-items:center}
+    .card{background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px 0;font-size:1.9rem}
+    p.lead{margin:0;color:var(--muted)}
+
+    .contact-card{padding:18px;text-align:center}
+    .avatar{width:120px;height:120px;border-radius:12px;display:block;margin:0 auto 12px;background:linear-gradient(135deg,#ffffff22,#00000022);font-size:44px;display:flex;align-items:center;justify-content:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+
+    section{margin-top:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .project img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .tags{margin-top:8px}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:#0d263a;color:var(--muted);font-size:0.8rem;margin-right:6px}
+
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:0.9rem;padding-bottom:40px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      nav{display:none}
+    }
+
+    .muted{color:var(--muted)}
+    .small{font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FD</div>
+        <div>
+          <div style="font-weight:700">Fadhlan</div>
+          <div class="muted small">Frontend Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card">
+          <h1>Halo — saya Fadhlan</h1>
+          <p class="lead">Saya membuat antarmuka yang rapi dan pengalaman pengguna yang intuitif. Fokus saya: HTML, dan CSS.</p>
+
+          <section id="about"> 
+            <h3>Tentang Saya</h3>
+            <p class="small muted">Saya tertarik membuat website responsif, optimasi performa, dan desain UI yang bersih.</p>
+            <div style="margin-top:12px">
+              <a class="btn" href="#projects">Lihat Proyek</a>
+              <a class="btn" style="background:#334155;margin-left:8px" href="mailto:fadhlan@example.com">Kirim Email</a>
+            </div>
+          </section>
+
+          <section id="skills">
+            <h3 style="margin-top:18px">Skill</h3>
+            <div class="grid-3" style="margin-top:8px">
+              <div class="card small"><strong>HTML &amp; CSS</strong><div class="muted small" style="margin-top:6px">Responsive layout, Flexbox, Grid</div></div>
+              <div class="card small"><strong>Design</strong><div class="muted small" style="margin-top:6px">Figma basics, visual hierarchy</div></div>
+            </div>
+          </section>
+
+        </div>
+             <img src="fadhlan.jpg" alt="Foto Profil" class="avatar-img" width="300px">
+      </div>
+
+      <section id="projects">
+        <h2>Proyek</h2>
+        <div class="grid-3" style="margin-top:10px">
+          <article class="project card">
+            <img src="https://picsum.photos/seed/p1/800/400" alt="Proyek 1">
+            <h4 style="margin:8px 0 4px 0">TokoOnlineMu</h4>
+            <div class="muted small">Sistem toko online sederhana — checkout, produk, dan manajemen pesanan.</div>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span ></div>
+          </article>
+
+          <article class="project card">
+            <img src="https://picsum.photos/seed/p2/800/400" alt="Proyek 2">
+            <h4 style="margin:8px 0 4px 0">Dashboard Analitik</h4>
+            <div class="muted small">Visualisasi data dan komponen kembali pakai untuk laporan.</div>
+            <div class="tags"><span class="tag">React</span><span class="tag">Chart</span></div>
+          </article>
+
+          <article class="project card">
+            <img src="https://picsum.photos/seed/p3/800/400" alt="Proyek 3">
+            <h4 style="margin:8px 0 4px 0">Website Sekolah</h4>
+            <div class="muted small">Landing page informatif dan sistem pendaftaran.</div>
+            <div class="tags"><span class="tag">Bootstrap</span><span class="tag">PHP</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Kontak</h2>
+        <div class="card" style="margin-top:10px;display:flex;gap:18px;flex-direction:column">
+          <form onsubmit="handleSubmit(event)">
+            <label class="small muted">Nama</label>
+            <input required placeholder="Nama Anda" style="padding:10px;border-radius:8px;border:1px solid #0e2a44;background:transparent;color:inherit">
+
+            <label class="small muted" style="margin-top:8px">Email</label>
+            <input type="email" required placeholder="email@domain.com" style="padding:10px;border-radius:8px;border:1px solid #0e2a44;background:transparent;color:inherit">
+
+            <label class="small muted" style="margin-top:8px">Pesan</label>
+            <textarea required placeholder="Tulis pesan..." style="min-height:100px;padding:10px;border-radius:8px;border:1px solid #0e2a44;background:transparent;color:inherit"></textarea>
+
+            <div style="margin-top:10px">
+              <button class="btn" type="submit">Kirim</button>
+            </div>
+          </form>
+
+          <div class="muted small">Atau email langsung: <a href="mailto:fadhlan@example.com" style="color:inherit;text-decoration:underline">fadhlan@example.com</a></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+       Fadhlan — Dibuat dengan sepenuh hati. Template sederhana — sesuaikan sesuai kebutuhan.
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Terima kasih! Pesan Anda berhasil dikirim (tidak benar-benar terkirim pada template ini).');
+      e.target.reset();
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const href=a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
